@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Method</title>
+</head>
+<body>
+    <p id = "demo"></p>
+    <script>
+        // Creating an Object
+        const person = {firstName:"Neeraj", 
+                        lastName:"Verma", 
+                        age:23, 
+                        height:5.6,
+                    
+                        fullDetail : function() {
+                            return this.firstName + " " + this.lastName + " is " + this.age + " old " + "having " + this.height + " height.";
+                        }
+                    };
+
+            //Displaying data from the object
+            document.getElementById("demo").innerHTML = person.fullDetail();
+    </script>
+</body>
+</html>

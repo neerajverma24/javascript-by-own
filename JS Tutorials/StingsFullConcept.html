@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+</head>
+<body>
+    <h2>Length of String</h2>
+    <p>syntax : document.getElementById('demo').innerHTML = x.length</p>
+    <p id="demo"></p>
+    <script>
+        let x = "ABCDEF GHIJKLM NOPQRST UVWXYZ"
+        document.getElementById('demo').innerHTML = x.length;
+    </script>
+    <hr>
+
+    <p>You can break a code line by using a  BACKSLASH   \ in between.</p>
+    <pre>
+        document.getElementById('demo2').innerHTML = "Hello! \
+                world" <BR>
+        NOTE : code will not run if we break a code line by putting backslash in staring of the executed code. <br>
+        RESULT DOWN
+    </pre>
+    <p id="demo2"></p>
+    <script>
+        document.getElementById('demo2').innerHTML = "Hello! \
+                world"
+    </script> <hr>
+
+    <h3>The indexOf() Method</h3>
+    <p>It will locate the Words or String with its position of occurence in alphabetically.</p>
+    <pre>
+        NOTE : it will also count the spaces between the words.
+    </pre>
+    <p>We are finding the "find" in the text { let text = "Please find the Location of any Number or Word } , which results</p>
+    <script>
+        let text = "Please find the Location of any Number or Word";
+        let index = text.indexOf('find');
+        document.write(index);
+
+    </script>
+</body>
+</html>

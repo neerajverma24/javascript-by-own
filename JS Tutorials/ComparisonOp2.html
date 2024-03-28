@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparison Operator</title>
+</head>
+<body>
+    <h1>The () : Ternary Function </h1>
+    <h3>Write a Number <=18 , >=18, and a String to see the result.</h3>
+    <input id = "age" value="18">
+    <button onclick="myFunction()">Enter Your Age</button>
+
+    <p id = "demo"></p>
+    <script>
+    function myFunction() {
+        let votable;
+        let age = document.getElementById('age').value;
+        if (isNaN(age)) {
+            votable = 'Please enter a number '
+        }  else {
+            votable = (age < 18) ? "Too young " : "Eligible "
+        }
+        document.getElementById("demo").innerHTML = votable + " to vote."
+    }
+    </script>
+</body>
+</html>

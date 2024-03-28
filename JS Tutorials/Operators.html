@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator</title>
+</head>
+<body>
+    <h1>JavaScript Arithmetic</h1>
+    <h2>The += Operator</h2>
+    <p id="demo"></p>
+    <script>
+        let x = 10;
+        x += 5;
+        document.getElementById("demo").innerHTML=x;
+    </script>
+
+    <h1>JavaScript String Operators</h1>
+    <p>All conditional operators can be used on both numbers and strings.</p>
+    <p id = "demo2"></p>
+    <script>
+        let text1 = 45;
+        let text2 = 54;
+        let result = text1 > text2;
+        document.getElementById('demo2').innerHTML = "The condition is " + result;
+    </script>
+
+    <h1>The += operators for a string</h1>
+    <h2>This operator is also called "Concatenation / additon"</h2>
+    <p id = "demo3"></p>
+    <script>
+        let text3 = "Hello Neeraj"
+        text3 += " Verma !"
+        document.getElementById('demo3').innerHTML= text3;
+    </script>
+    
+    <h1>JavaScript Arithmetic</h1>
+    <h2>Math.pow()</h2>
+
+    <p id="demo4"></p>
+
+    <script>
+        let a = 5;
+        document.getElementById("demo4").innerHTML = Math.pow(a,2);
+    </script>
+    
+</body>
+</html>

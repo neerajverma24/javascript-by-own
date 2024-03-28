@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <h1>JavaScript Function</h1>
+    <p>Calling a function to perform a calculation to get the result.</p>
+
+    <p id="demo"></p>
+    <script>
+        function myFunction(a,b) {
+            return (a * b)
+        }
+        let addition = myFunction(3,4)
+        document.getElementById("demo").innerHTML= "Multiplication is " + addition;
+
+    </script>
+
+    <h2>Calling a  function WITH RETURN  to convert Fahrenheit into Celsius, when  (f=77)</h2>
+    <h3>Formula</h3>
+    <p> F = (C * 9/5) + 32 </p>
+    <p id="degree"></p>
+    <script>
+        function toCelsius(f) {
+            return (f-32) * (5/9);    // parentheses is compulsory for this part
+        }
+        let  value = toCelsius(77);   // CALLING A FUNCTION BY USING IT AS A VARIABLE
+        document.getElementById('degree').innerHTML = "The temparature in Celsius is " + value;
+    </script>
+
+    <h2>Calling a  function BY USING IT AS A TEXT to convert Fahrenheit into Celsius, when  (f=77)</h2>
+    <p id="demo1"></p>
+    <script>
+        let text = "The temparature is " + toCelsius(77) + " degree Celsius."
+
+        function toCelsius(f) {
+            return (f-32) * (5/9);    // parentheses is compulsory for this part
+        } document.getElementById('demo1').innerHTML = text;
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+
+<body>
+    <script>
+        //by literal
+        workers = { Name: "Shyam", Days: 15, Salary: 7500 };
+        document.write(workers.Name + " " + workers.Days + " " + workers.Salary);
+
+        // creating object by instance of
+        var emp = new Object();
+        emp.id = 45;
+        emp.name = "Shyam Lal";
+        emp.days = 5;
+        emp.salary = 2500;
+        document.write("<br>" + emp.id + " " + emp.name + " " + emp.days + " " + emp.salary);
+
+        // object by constructor
+        function shop(a, b, c) {
+            this.a = a;
+            this.b = b;
+            this.c = c;
+        }
+        d = new shop("Mobile", "Food", "Tea");
+        console.log(d.a + " " + d.b + " " + d.c);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Form Validation</h1>
+    <div class="form-div" style="display:flex; justify-content: center; align-items: center;">
+        <form onsubmit="return validate()" action="demo.html">
+            <input id="username" type="email" placeholder="Enter Email" /> <br /><br />
+            <input id="password" type="password" placeholder="Enter password" /> <br /><br />
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        function validate() {
+            let username = document.getElementById("username")
+            let password = document.getElementById("password")
+
+            if (username.value === '' || password.value === '') {
+                alert("Please fill all the input");
+                console.log("Empty inputs")
+                return false;
+            } else {
+                true;
+            }
+        }
+    </script>
+
+</body>
+
+</html>

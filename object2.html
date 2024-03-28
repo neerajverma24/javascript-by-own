@@ -1,0 +1,28 @@
+<html>
+
+<body>
+    <script>
+        // object by literals
+        street = { Member: 2, Name: "Neeraj" }
+        document.write("Member : " + street.Member + "<br>Member Name : " + street.Name);
+
+        // object by instance of
+        var emp = new Object();
+        emp.id = 13;
+        emp.name = "Daksh";
+        emp.add = "Sangam Vihar";
+        emp.office = "Saket";
+        document.write("<br>" + emp.id + " " + emp.name + " " + emp.add + " " + emp.office);
+
+        // objects by using constructor
+        function shop(a, b, c) {
+            this.a = a;
+            this.b = b;
+            this.c = c;
+        }
+        k = new shop("STORE", "SHOWROOM", "BOUTIQUE");
+        document.write("<br>" + k.a + " " + k.b + " " + k.c);
+    </script>
+</body>
+
+</html>

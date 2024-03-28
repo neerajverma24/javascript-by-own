@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call function</title>
+</head>
+
+<body>
+    <script>
+        // calling function with an alert 
+        function msg() {
+            alert("Hello! This is a msg.");
+        }
+    </script>
+    <input type="button" value=" call function" onclick="msg()" />
+
+    <script>
+        // calling function with an argument
+        function getsquare(number) {
+            document.write("<br>" + number * number);
+        }
+
+        getsquare(4);
+
+
+        // callig function with return value
+        function getvalue() {
+            return (getvalue());
+
+        }
+        document.write("<br>Hello! Everyone ");
+
+        //using function with an object
+        var add = new Function("num1", "num2", "return num1+num2");
+        document.write(add("<br>" + "Neeraj ", "Verma"));
+    </script>
+
+</body>
+
+</html>

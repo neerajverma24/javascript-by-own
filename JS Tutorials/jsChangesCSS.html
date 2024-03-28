@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js changes CSS style</title>
+</head>
+<body>
+    <h1>JavaScript can change CSS style.</h1>
+    <p id="para">This is a Paragraph with normal font-size. Click button to change it to 35px.</p>
+    <button type="button" onclick="document.getElementById('para').style.fontSize='35px'">Click Me</button>
+
+
+    <p id="hide">This content will hide by clicking on the Button.</p>
+    <button type="button" onclick="document.getElementById('hide').style.display='none'">Click to Hide upper line</button><br><br>
+
+    <p id="show" style="display:none">This was the hidden content.</p>
+    <button type="button" onclick="document.getElementById('show').style.display='block'">Click me to show the hidden content</button>
+
+    
+</body>
+</html>
